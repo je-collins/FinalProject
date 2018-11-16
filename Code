@@ -63,20 +63,22 @@ typedef struct job {
 
 
 int main(void) {
-// Declare board array
-int board[BOARD_LEN];
+    // Declare board array
+    int board[BOARD_LEN];
 
-// Declare structs
-struct classes player1[CLASS_LEN];
-struct classes player2[CLASS_LEN];
-struct classes player3[CLASS_LEN];
-struct classes player4[CLASS_LEN];
+    // Declare structs
+    struct classes player1[CLASS_LEN];
+    struct classes player2[CLASS_LEN];
+    struct classes player3[CLASS_LEN];
+    struct classes player4[CLASS_LEN];
 
-struct internships internDeck[LEN];
-struct scholarship scholarDeck[LEN];
-struct internships jobDeck[LEN];
+    struct internships internDeck[LEN];
+    struct scholarship scholarDeck[LEN];
+    struct internships jobDeck[LEN];
 
-struct students players[PLAY_NUM];
+    struct students players[PLAY_NUM];
 
-return 0;
+    return 0;
 }
+
+
