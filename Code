@@ -1,0 +1,82 @@
+// Jordan Collins and Justin Hue
+// 11/2/18
+// Finds the length of ascending and same-suit sequences
+// in a shuffled deck of cards
+
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+#define PLAY_NUM 4
+#define CLASS_LEN 30
+#define LEN 10
+#define BOARD_LEN 220
+
+// Define special spaces
+#define FAILED 1
+#define CHEAT 2
+#define SCHOLARSHIP 3
+#define INTERNSHIP 4
+#define SQUIRREL 5
+#define LIME_BIKE 6
+#define SKATE 7
+
+// Define major options
+#define CS 1
+#define ENGINEERING 2
+#define IT 3
+#define BIO 4
+#define HEALTH 5
+
+// Declare structs
+typedef struct student {
+    char playerNum;
+    int points;
+    double loans;
+    double money;
+    int stuck;
+    int major;
+    int position;
+} student;
+
+typedef struct course {
+    char name;
+    int points;
+    char preReq;
+} course;
+
+typedef struct internship {
+    char name;
+    int years;
+    double pay;
+} internship;
+
+typedef struct scholarship {
+    char name;
+    double pay;
+} scholarship;
+
+typedef struct job {
+    char name;
+    double pay;
+} job;
+
+
+int main(void) {
+// Declare board array
+int board[BOARD_LEN];
+
+// Declare structs
+struct classes player1[CLASS_LEN];
+struct classes player2[CLASS_LEN];
+struct classes player3[CLASS_LEN];
+struct classes player4[CLASS_LEN];
+
+struct internships internDeck[LEN];
+struct scholarship scholarDeck[LEN];
+struct internships jobDeck[LEN];
+
+struct students players[PLAY_NUM];
+
+return 0;
+}
